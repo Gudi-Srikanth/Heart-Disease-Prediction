@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900 &family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../static/index.css">
+    <title>My Heart Health</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <img id="logo" src="../static/logo.jpg" alt="logo"/>
+            <h1 id="title">My Heart Health</h1>
+        </div>
+        <form id="healthForm" method="post" action="/predict">
+        <div class="center-container">
+                <div class="form-row first-row">
+                    <div class="elements">
+                        <div class="form-column">
+                            <label for="sex">Sex :</label><br>
+                            <input type="number" id="sex" name="sex" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="age">Age:</label><br>
+                            <input type="number" id="age" name="age" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="currentSmoker">Current Smoker :</label><br>
+                            <input type="number" id="currentSmoker" name="currentSmoker" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="cigsPerDay">Cigarettes Per Day:</label><br>
+                            <input type="number" id="cigsPerDay" name="cigsPerDay" required>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img id="form_image" src="../static/form_1.png" alt="form1indicator">
+                    </div>
+                </div>
+                <div class="form-row second-row">
+                    <div class="elements">
+                    <div class="form-column">
+                        <label for="BPMeds">BP Medication:</label><br>
+                        <input type="number" id="BPMeds" name="BPMeds" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="prevalentStroke">Prevalent Stroke :</label><br>
+                         <input type="number" id="prevalentStroke" name="prevalentStroke" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="prevalentHyp">Prevalent Hypertension :</label><br>
+                        <input type="number" id="prevalentHyp" name="prevalentHyp" required>
+                    </div>
+                    </div>
+                    <div class="form_img"> 
+                        <img id="form_image"  src="../static/form_2.png">
+                    </div>
+                </div>
+                <div class="form_img first_out">
+                    <img id="out_img" src="../static/out_img1.jpg">
+                </div>
+                <div class="form-row third-row">
+                    <div class="elements">
+                   <div class="form-column">
+                        <label for="diabetes">Diabetes:</label><br>
+                        <input type="number" id="diabetes" name="diabetes" required>  
+                   </div>
+                   <div class="form-column">
+                        <label for="totChol">Total Cholesterol:</label><br>
+                        <input type="number" id="totChol" name="totChol" required>
+                   </div>
+                    <div class="form-column">
+                        <label for="sysBP">Systolic Blood Pressure:</label><br>
+                        <input type="number" id="sysBP" name="sysBP" required>
+                    </div>
+                </div>
+                <div class="form_img"> 
+                    <img id="form_image" src="../static/form_3.jpg">
+                </div>
+                </div>
+                <div class="form-row fourth-row">
+                    <div class="elements"> 
+                    <div class="form-column">
+                        <label for="diaBP">Diastolic Blood Pressure:</label><br>
+                        <input type="number" id="diaBP" name="diaBP" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="BMI">BMI (Body Mass Index):</label><br>
+                        <input type="number" id="BMI" name="BMI" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="heartRate">Heart Rate:</label><br>
+                        <input type="number" id="heartRate" name="heartRate" required>
+                        </div>
+                    <div class="form-column">              
+                       <label for="glucose">Glucose Level:</label><br>
+                       <input type="number" id="glucose" name="glucose" required>
+                    </div>
+                </div>
+                <div class="form_img">
+                    <img id="form_image" src="../static/form_4.jpg">
+                </div>
+                </div>
+                <div class="form_img second_out">
+                    <img id="out_img" src="../static/out_img2.jpg">
+                </div>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <div class="output">
+            <h1>{{ prediction_text }}</h1> 
+        </div>
+        <div class="footer-container">
+            <footer>
+                <p>2024. All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

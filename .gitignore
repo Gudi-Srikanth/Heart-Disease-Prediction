@@ -1,0 +1,29 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Flask environment files
+.env
+.venv/
+venv/
+instance/
+*.db
+*.sqlite3
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Python packages
+*.egg-info/
+*.egg
+
+# Node (if any experiment later)
+node_modules/
+
+# Log files
+*.log
