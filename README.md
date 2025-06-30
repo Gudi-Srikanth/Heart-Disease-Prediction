@@ -7,7 +7,7 @@ A user-friendly web app that uses ensemble ML techniques to predict 10-year hear
 ## 🎥 Demo
 
 > 📽️ **Watch the working demo here**  
-> 🔗 [Click to view demo video](/static/Heart-Disease-Prediction_Demo.mp4)
+> 🔗 [Click to view demo video](static/Heart-Diesase-Prediction_Demo.mp4)
 
 ---
 
