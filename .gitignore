@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *.pyo
+.idea
 
 # Flask environment files
 .env
