@@ -19,8 +19,6 @@ def predict():
         final = [np.array(int_features)]
         print(final)
         prediction = model.predict(final)
-        output=prediction[0]
-        prediction = model.predict(final)
         output = prediction[0]
         print(output)
         if output == 1:
